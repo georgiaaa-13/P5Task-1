@@ -1,10 +1,10 @@
 "use strict";
 
 function setup(){
-createCanvas(400,400);
+    createCanvas(400,400);
 }
 
 function draw(){
     background(100);
-    
+    circle(width,height,4)
 }
