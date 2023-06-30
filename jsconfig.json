@@ -3,6 +3,12 @@
       "module": "commonjs",
       
     },
-    "exclude": ["p5","play"]
-    
+    "target": "es6", // recommended to allow modern ECMAScript features
+    "exclude": ["p5","play","./lib/p5"],
+    "include": ["js/*.js", "./lib/*.d.ts"], // includes all JavaScript files and TypeScript declaration files in lib
+    "baseUrl": ".", // this must be specified if "paths" is.
+    "paths": {
+      "*": ["*", "js/","lib/"]
+    },
+    "checkJs": true, // enables type checking for JavaScript files
   }
